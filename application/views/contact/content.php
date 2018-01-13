@@ -1,3 +1,13 @@
+<?php $msg = $this->session->flashdata('mail_success'); ?>
+<?php $msg2 = $this->session->flashdata('mail_danger'); ?>
+<?php  if ($msg) {
+    echo '<script>toastr.success("'.$msg.'");</script>';
+} ?>
+
+<?php  if ($msg2) {
+    echo '<script>toastr.success("'.$msg2.'");</script>';
+} ?>
+
 <div class="container"><br>
 
     <div class="col-sm-4 " id="content">

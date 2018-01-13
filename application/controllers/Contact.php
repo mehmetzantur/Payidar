@@ -60,6 +60,11 @@ class Contact extends MI_Controller
 
                 $send = $this->email->send();
 
+                $this->email->from("payidareticaret@gmail.com" ,"Motocar");
+                $this->email->to($email);
+                $this->email->subject("Website İletişim");
+                $this->email->message("Mesajınız alınmıştır. Size en yakın zamanda dönüş yapacağız...");
+
                 if ($send){
                     $this->session->set_flashdata('mail_success', 'Mesajınız gönderilmiştir.' . '<br>' . 'Size en yakın zamanda dönüş yapacağız...');
                     redirect($this->ComeBackToUrl());
