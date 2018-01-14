@@ -152,7 +152,7 @@
                         <div class="pull-left"><input type="checkbox" value="1" name="agree">&nbsp;&nbsp;Beni Hatırla
                         </div>
                         <div class="pull-right">
-                            &nbsp;<a href="#">Şifremi Unuttum</a> &nbsp;
+                            &nbsp;<a href="<?php echo base_url(). 'Register/GetForget' ?>">Şifremi Unuttum</a> &nbsp;
                             <input type="submit" class="btn btn-primary" value="Giriş Yap" name="login">
                         </div>
                     </div>

@@ -28,13 +28,16 @@ class Contact extends MI_Controller
                 $email = $this->input->post('email');
                 $message = $this->input->post('message');
 
+                $systeMail = $this->cleanHtmlTags($this->settingsmodel->GetMail()[0]->Detail);
+                $systeMailPass = $this->cleanHtmlTags($this->settingsmodel->GetMailPass()[0]->Detail);
+
                 $config = array(
 
                     "protocol" => "smtp",
                     "smtp_host" => "ssl://smtp.gmail.com",
                     "smtp_port" => "465",
-                    "smtp_user" => "payidareticaret@gmail.com",
-                    "smtp_pass" => "payidar1234",
+                    "smtp_user" => $systeMail,
+                    "smtp_pass" => $systeMailPass,
                     "starttls" => true,
                     "charset" => "utf-8",
                     "mailtype" => "html",

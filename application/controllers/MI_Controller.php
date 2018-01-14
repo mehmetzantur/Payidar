@@ -34,6 +34,15 @@ class MI_Controller extends CI_Controller
             return FALSE;
     }
 
+    public function GetUserEmail()
+    {
+        $user = $this->session->userdata('userEmail');
+        if (!empty($user))
+            return $user;
+        else
+            return FALSE;
+    }
+
     public function GetAdminId()
     {
         $user = $this->session->userdata('adminId');

@@ -50,7 +50,7 @@
 
                                                 <?php
                                             }else{
-                                                echo '<a href="' .  base_url() .'Register' . '" class="col-lg-12 btn btn-success"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;Giriş Yap / Üye Ol</a>';
+                                                echo '<a href="' .  base_url() .'Giris' . '" class="col-lg-12 btn btn-success"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;Giriş Yap / Üye Ol</a>';
                                             }
                                     ?>
                                 </div>

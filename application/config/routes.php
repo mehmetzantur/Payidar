@@ -27,6 +27,10 @@ $route['Profil/Guncelle'] = "Profile/UpdateProfile";
 $route['Siparislerim'] = "Order";
 $route['Cikis'] = "Home/Logout";
 
+$route['Giris'] = "Register";
+
+
+
 $route['Mesajlarim'] = "Issue";
 $route['YeniSoru'] = "Issue/NewQuestion";
 $route['Soru/(:any)/(:num)'] = "Issue/GetReply";

@@ -156,11 +156,6 @@
                                 </h4>
                                 <p class="price"><span class="price-new"><?php echo $disc['Price']; ?> TL</span> <span
                                             class="saving-new"><i class="fa fa-star" aria-hidden="true"></i></span></p>
-<<<<<<< HEAD
-                                
-=======
-
->>>>>>> deploy
                             </div>
                             <div class="button-group">
                                 <?php if (!empty($userFirstName)) { ?>
