@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e61532ec-0d85-4d6d-940f-c73f2455e78e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/application/controllers/Contact.php" afterPath="$PROJECT_DIR$/application/controllers/Contact.php" />
-      <change beforePath="$PROJECT_DIR$/application/views/contact/content.php" afterPath="$PROJECT_DIR$/application/views/contact/content.php" />
+      <change beforePath="$PROJECT_DIR$/application/views/index/main_content.php" afterPath="$PROJECT_DIR$/application/views/index/main_content.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,14 +16,24 @@
       <file leaf-file-name="Contact.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/Contact.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="71" column="62" lean-forward="false" selection-start-line="71" selection-start-column="51" selection-end-line="71" selection-end-column="62" />
+            <state relative-caret-position="420">
+              <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="content.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main_content.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/views/index/main_content.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="499">
+              <caret line="168" column="42" lean-forward="true" selection-start-line="168" selection-start-column="42" selection-end-line="168" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="content.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/contact/content.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
@@ -44,6 +53,7 @@
       <list>
         <option value="$PROJECT_DIR$/application/controllers/Contact.php" />
         <option value="$PROJECT_DIR$/application/views/contact/content.php" />
+        <option value="$PROJECT_DIR$/application/views/index/main_content.php" />
       </list>
     </option>
   </component>
@@ -54,7 +64,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="537" />
     <option name="y" value="-8" />
     <option name="width" value="996" />
@@ -113,6 +123,13 @@
               <item name="Payidar" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Payidar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Payidar" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="order" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
@@ -150,15 +167,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1515878011296</updated>
-      <workItem from="1515878012728" duration="1315000" />
+      <workItem from="1515878012728" duration="1871000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1315000" />
+    <option name="totallyTimeSpent" value="1871000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -208,18 +225,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Contact.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="71" column="62" lean-forward="false" selection-start-line="71" selection-start-column="51" selection-end-line="71" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/contact/content.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Contact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/index/main_content.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="168" column="42" lean-forward="true" selection-start-line="168" selection-start-column="42" selection-end-line="168" selection-end-column="42" />
           <folding />
         </state>
       </provider>
