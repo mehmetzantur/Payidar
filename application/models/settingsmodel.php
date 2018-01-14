@@ -19,6 +19,25 @@ class settingsmodel extends CI_Model
 
     }
 
+    public function GetMail()
+    {
+        $query = $this
+            ->db
+            ->where('Name','Mail')
+            ->get('settings');
+        return $query->result_array();
+    }
+
+    public function GetMailPass()
+    {
+        $query = $this
+            ->db
+            ->where('Name','MailSifre')
+            ->get('settings');
+        return $query->result_array();
+    }
+
+
     public function GetCustomPages()
     {
         $query = $this

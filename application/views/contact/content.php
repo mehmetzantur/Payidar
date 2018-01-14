@@ -1,3 +1,4 @@
+<title><?php echo $title ?> </title>
 <?php $msg = $this->session->flashdata('mail_success'); ?>
 <?php $msg2 = $this->session->flashdata('mail_danger'); ?>
 <?php  if ($msg) {

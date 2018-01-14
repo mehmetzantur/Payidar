@@ -108,6 +108,34 @@ class basketmodel extends CI_Model
             ->delete('basket');
     }
 
+    public function CheckoutEmailSend($userid)
+    {
+        $query = $this
+            ->db
+            ->select('basket.Id as basketId,
+                 basket.UserId as basketUserId,
+                 basket.ProductId as basketProductId,
+                 basket.Amount as basketAmount,
+                 basket.Amount * basket.Price  as basketTotal,
+                 basket.Price as basketPrice,
+                 basket.Time as basketVoteTime,
+
+                 product.Id as productId,
+                 product.Name as productName,
+                 product.Image as productImage,
+
+                 user.Id as userId'
+            )
+            ->order_by('basketId', 'ASC')
+            ->from('basket')
+            ->where('Status', '2')
+            ->where('user.Id', $userid)
+            ->join('user', 'user.Id = basket.UserId ')
+            ->join('product', 'product.Id = basket.ProductId ')
+            ->get();
+        return $query->result_array();
+    }
+
     public function Checkout($userid, $shippingPrice)
     {
         $query = $this

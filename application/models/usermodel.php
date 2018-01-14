@@ -23,6 +23,16 @@ class usermodel extends CI_Model{
 		return $this->db->insert('user',$userData);
 	}
 
+    public function GetWhMail($mail)
+    {
+        $query=$this
+            ->db
+            ->where('Email',$mail)
+            ->limit(1)
+            ->get('user');
+        return $query->result_array();
+    }
+
 	public function GetWhId($id)
     {
         $query=$this

@@ -126,10 +126,46 @@ class Basket extends MI_Controller
     {
         if (!empty($this->GetUserId())) {
             $shippingPrice = $this->cleanHtmlTags($this->settingsmodel->GetSetting('Kargo')[0]->Detail);
+
+
+            $mailMessage="Siparişiniz Alınmıştır...";
+
             $result = $this->basketmodel->Checkout($this->GetUserId(), $shippingPrice);
+
+
             if ($result) {
-                $this->SetFlashdata('basket_checkout','Siparişiniz gönderildi...');
-                redirect("Order");
+                $name = "Motocar Oto Bakım Ürünleri";
+
+                $systeMail = $this->cleanHtmlTags($this->settingsmodel->GetMail()[0]['Detail']);
+                $systeMailPass = $this->cleanHtmlTags($this->settingsmodel->GetMailPass()[0]['Detail']);
+
+                $config = array(
+
+                    "protocol" => "smtp",
+                    "smtp_host" => "ssl://smtp.gmail.com",
+                    "smtp_port" => "465",
+                    "smtp_user" => $systeMail,
+                    "smtp_pass" => $systeMailPass,
+                    "starttls" => true,
+                    "charset" => "utf-8",
+                    "mailtype" => "html",
+                    "wordwrap" => true,
+                    "newline" => "\r\n"
+                );
+
+                $this->load->library("email",$config);
+
+                $this->email->from($systeMail ,$name);
+                $this->email->to($this->GetUserEmail());
+                $this->email->subject("Sipariş Onayı");
+                $this->email->message($mailMessage);
+
+                $send = $this->email->send();
+                if($send){
+                    $this->SetFlashdata('basket_checkout','Siparişiniz gönderildi...');
+                    redirect("Order");
+                }
+
             }
         } else {
             redirect('Register');
