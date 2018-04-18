@@ -5,5 +5,6 @@ Demo: http://www.m3hm3t.xyz
 
 ![alt text](https://raw.githubusercontent.com/mehmetzantur/Payidar/master/payidarSS.jpeg)
 
+![alt text](https://raw.githubusercontent.com/mehmetzantur/Payidar/master/payidarpanelSS.jpeg)
 
 
