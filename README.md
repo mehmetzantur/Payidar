@@ -1,2 +1,2 @@
 # Payidar
-Php E-Ticaret 
+Php E-Ticaret (Codeigniter)
